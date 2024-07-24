@@ -65,7 +65,7 @@
     <!-- Header Start -->
     <header class="py-4 border-b-[0.5px] border-b-[lightgrey] transition-all delay-200 ease-in-out ml-0" id="navHeader">
         <div class="container">
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center relative">
                 <div class="w-[110px]">
                     <img class="w-full" src="/asset/logo.svg" alt="">
                 </div>
@@ -84,9 +84,24 @@
                 <div class="hidden md:block">
                     <button class="bg-blue text-white px-5 py-3 rounded-lg hover:bg-darkBlue">Get In Touch</button>
                 </div>
-                <div class="block md:hidden">
+                <div class="block md:hidden" id="bar" onclick="toggleMenu()">
                     <i class="fa-solid fa-bars"></i>
                 </div>
+                <ul class="w-full hidden md:hidden absolute top-11 bg-white text-darkBlue z-[1000] rounded-md shadow-lg"
+                    id="mobileMenu">
+                    <li class="p-2 px-3 hover:text-blue font-semibold text-lg">
+                        <a href="">Features</a>
+                    </li>
+                    <li class="p-2 px-3 hover:text-blue font-semibold text-lg">
+                        <a href="">Pricing</a>
+                    </li>
+                    <li class="p-2 px-3 hover:text-blue font-semibold text-lg">
+                        <a href="">Help</a>
+                    </li>
+                    <li class="p-2 px-3 hover:text-blue font-semibold text-lg">
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -216,7 +231,8 @@
         <div class="container">
             <div class="flex flex-col">
                 <div class="grid grid-cols-1 lg:grid-cols-2 mb-10">
-                    <div class="w-full text-left flex flex-col justify-center pr-0 lg:pr-20 gap-y-5 gap-x-10 mb-10 lg:mb-0">
+                    <div
+                        class="w-full text-left flex flex-col justify-center pr-0 lg:pr-20 gap-y-5 gap-x-10 mb-10 lg:mb-0">
                         <p class="text-blue font-inter font-semibold">Efficiency meets intelligence</p>
                         <h2 class="text-[40px] font-medium text-darkBlue py-5"><span
                                 class="bg-aliblue rounded-md px-2 py-1 text-blue">AI Powered</span> by your support
@@ -524,7 +540,8 @@
                     </div>
                 </div>
                 <hr class="border-[#FFFFFF12]">
-                <div class="w-full flex flex-wrap justify-start md:justify-between items-center gap-y-8 md:gap-y-0 py-10">
+                <div
+                    class="w-full flex flex-wrap justify-start md:justify-between items-center gap-y-8 md:gap-y-0 py-10">
                     <p class="text-[#cdd7ea]">
                         <i class="fa-regular fa-copyright"></i>
                         Sierra WordPress Theme. All Rights Reserved.
